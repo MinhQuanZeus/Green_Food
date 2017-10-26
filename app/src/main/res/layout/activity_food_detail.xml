@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zeus.quantm.greenfood.activities.FoodDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Notification"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_below="@id/tb_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_food"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_local_dining_black_24dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/iv_food"
+            android:layout_alignParentStart="true"
+            android:alpha="0.7"
+            app:srcCompat="@drawable/custome_gradient_music_type" />
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignStart="@+id/iv_avatar"
+            android:text="20/06/2017 lúc 22:30"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:padding="3dp"
+            android:text="200m"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toLeftOf="@id/tv_current_time"
+            android:layout_toStartOf="@+id/tv_distance"
+            android:paddingLeft="5dp"
+            app:srcCompat="@drawable/ic_near_me_black_24dp" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iv_food"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_avatar"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/iv_avatar"
+            android:text="Minh Quan"
+            android:textColor="@color/secondary_text" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_avatar"
+            android:layout_alignStart="@+id/tv_username"
+            android:layout_below="@+id/tv_username"
+            android:numStars="5"
+            android:paddingTop="5dp"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tv_username"
+            android:layout_toLeftOf="@id/tv_username"
+            android:paddingLeft="5dp"
+            android:paddingEnd="10dp"
+            app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_avatar"
+            android:layout_below="@+id/iv_avatar"
+            android:layout_marginTop="10dp"
+            android:text="Banh da cua"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_food_name"
+            android:layout_below="@+id/tv_food_name"
+            android:text="Bánh đa cua, hay canh bánh đa, là một món ăn dân dã, phổ biến tại Hải Phòng"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_description"
+            android:layout_below="@+id/tv_description"
+            android:paddingTop="8dp"
+            android:text="@string/tv_food_avaiable"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/tv_food_avaiable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_description"
+            android:layout_toRightOf="@id/tv_1"
+            android:paddingLeft="5dp"
+            android:paddingTop="8dp"
+            android:text="8"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_1"
+            android:layout_below="@+id/tv_1"
+            android:layout_marginTop="13dp"
+            android:text="@string/tv_food_address"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_1"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/tv_2"
+            android:text="Tầng 6, 22c Thành Công Hà Nội"
+            android:textColor="@color/primary_text" />
+
+        <View
+            android:id="@+id/view"
+            style="@style/Divider"
+            android:layout_below="@id/tv_2"
+            android:layout_marginTop="5dp"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/smilar"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_toEndOf="@+id/button2"
+            android:paddingBottom="5dp"
+            android:text="100.000"
+            android:textColor="@color/icons"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_price"
+            android:layout_toEndOf="@+id/tv_price"
+            android:text="₫"
+            android:textColor="@color/icons" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/editText"
+            android:text="+" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:text="1"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv_price"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/button2"
+            android:background="@drawable/edittext_border"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="47dp"
+            android:background="@color/colorAccent"
+            android:text="@string/order_button"
+            android:textColor="@color/icons" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

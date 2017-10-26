@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">GreenFood</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favotite</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Me</string>
+
+    <string name="facebook_app_id">1872320919755121</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">4e5884d1a8e8f210e4f3de0b35a42416</string>
+
+    <string name="permissions_receive_sms_title">Read SMS Code</string>
+    <string name="permissions_get_accounts_title">Read Email Address</string>
+    <string name="permissions_read_phone_state_message">
+        Grant permission to read your phone number from your device to pre-fill.
+    </string>
+    <string name="permissions_read_phone_state_title">Read Phone Number</string>
+    <string name="permissions_receive_sms_message">
+        Grant permission to read your SMS code from your device to pre-fill.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload_image_empty">Thêm hình ảnh</string>
+    <string name="upload_avatar_empty">Thêm hình đại diện</string>
+    <string name="upload_image_empty_description">Thêm hình đẹp để bán chạy hơn</string>
+    <string name="hint_input_food_name">Tên thức ăn</string>
+    <string name="hint_input_full_name">Tên đầy đủ</string>
+    <string name="hint_input_food_description">Mô tả</string>
+    <string name="hint_input_email">Email</string>
+    <string name="hint_input_food_price">Giá</string>
+    <string name="hint_input_password">Mật khẩu</string>
+    <string name="hint_input_food_quantity">Số lượng</string>
+    <string name="hint_input_confirm_password">Nhập lại mật khẩu</string>
+    <string name="bottom_button_sell">Đăng bán</string>
+    <string name="hint_input_food_address">Địa điểm giao dịch</string>
+    <string name="hint_input_user_address">Địa chỉ</string>
+    <string name="hint_input_user_phone">Số điện thoại</string>
+    <string name="tv_food_address">Địa chỉ:</string>
+    <string name="tv_food_avaiable">Còn lại:</string>
+    <string name="order_button">Order</string>
+    <string name="smilar">Tương tự</string>
+    <string name="post_title">Post</string>
+    <string name="error_out_of_price">Giá tối đa là 999.999.999VND</string>
+    <string name="firebase_token">firebase_token_ID</string>
+    <string name="reg_token_ID">regID</string>
+    <string name="notification_push">new notification</string>
+
+
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">%d ago</string>
+    <string name="time_ago_seconds">%d less than a minute</string>
+    <string name="time_ago_minute">about a minute</string>
+    <string name="time_ago_minutes">%d minutes</string>
+    <string name="time_ago_hour">about an hour</string>
+    <string name="time_ago_hours">about %d hours</string>
+    <string name="time_ago_day">a day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month">about a month</string>
+    <string name="time_ago_months">%d months</string>
+    <string name="time_ago_year">about a year</string>
+    <string name="time_ago_years">%d years</string>
+    <string name="no_account">Chưa có tài khoản? Đăng ký</string>
+    <string name="hind_password">Mật khẩu</string>
+    <string name="hint_verify_code">Mã xác nhận</string>
+    <string name="btn_login_text">Đăng nhập</string>
+    <string name="btn_send_code">Nhận mã xác nhận</string>
+    <string name="btn_verify_code">Xác nhận</string>
+    <string name="btn_signup_text">Đăng ký</string>
+    <string name="empty_new_feed">Đăng ký</string>
+
+
+
+</resources>
